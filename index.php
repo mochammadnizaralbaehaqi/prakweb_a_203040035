@@ -52,6 +52,12 @@
                 <td><?= $b['jenis_buku']?></td>
                 <td><?= $b['penulis_buku']?></td>
                 <td><?= $b['terbit_buku']?></td>
+                <td>
+                    <div>
+                    <button type="button" class="btn btn-warning"><a class="white-text" href="php/ubah.php?id=<?=$b['id_buku'];?>">UBAH</a></button>
+                    <button type="button" class="btn btn-warning"><a class="white-text" href="php/hapus.php">HAPUS</a></button>
+                    </div>
+                </td>
             </tr>
         <?php endforeach; ?>
     </tbody>
